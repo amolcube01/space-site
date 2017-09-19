@@ -1,0 +1,14 @@
+// Import the materialise partial
+@import 'materialize';
+
+// Import your custom partials here
+@import 'app/intro';
+@import 'app/angled-div';
+@import 'app/flow';
+@import 'app/contact';
+
+@media #{$small-and-down} {
+  .valign-wrapper {
+    display: block;
+  }
+}
