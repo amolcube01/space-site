@@ -1,0 +1,66 @@
+// Import the materialise partial
+@import 'materialize'; // Import your custom partials here
+img {
+  width: 100%;
+  @media #{$medium-and-up} {
+    width: 75%;
+  }
+  @media #{$large-and-up} {
+    width: 60%;
+  }
+  @media #{$extra-large-and-up} {
+    width: 50%;
+  }
+}
+span {
+  color: #ee6e73;
+}
+nav {
+  @extend .z-depth-0;
+
+  .brand-logo {
+    display: inline;
+    position: static;
+    @media #{$large-and-up} {
+      margin-left: 10%;
+      display: inline-block;
+      position: absolute;
+    }
+  }
+}
+
+nav,
+#navbar {
+  ul {
+    a {
+      &:hover {
+        background-color: rgba(0,0,0,0);
+        color: #ee6e73;
+        transition: color 0.5s;
+      }
+    }
+  }
+}
+
+#navbar {
+  background-color: white;color: rgba(0,0,0,.87);
+  a {
+    color: rgba(0,0,0,.87);;
+  }
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3) !important;
+}
+
+section {
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+  }
+}
+
+a.btn {
+  border-radius: 15px 0 15px 15px;
+}
