@@ -1,118 +1,32 @@
-div.nav-wrapper {
-  a.spaceup {
-    font-size: 28px;
-    padding-left: 15px;
-    color: black;
-  }
-
-  a.action1 {
-    color: black;
-  }
-
-  a.action2 {
-    color: black;
-  }
-}
-
-#particles-js {
+section.intro {
   height: 100vh;
-  @media #{$medium-and-up} {
-    height: 75vh;
-  }
-  //background: radial-gradient(at top right, rgba(74, 36, 113, 1), rgb(42, 19, 70), rgb(18, 5, 27));
-  background: rgb(32, 14, 56);
-}
-
-#intro {
-  position: absolute;
-  top: 1rem;
-  width: 100%;
-  @media #{$large-and-up} {
-    top: 2rem;
-  }
-  @media #{$extra-large-and-up} {
-    top: 5rem;
-  }
-
-  div.header {
-    p.get_started {
-      font-size: 48px;
-      font-weight: 300;
-      color: white;
-      margin-bottom: 0;
-      font-family: 'Oswald', sans-serif;
-      @media #{$large-and-up} {
-        font-size: 56px;
-      }
-      @media #{$extra-large-and-up} {
-        font-size: 72px;
-      }
+  //background-color: #0D47A1;
+  background: linear-gradient(#051329, #10356f, #3d81e7);
+  .content {
+    margin-top: 10%;
+    @media #{$medium-and-up} {
+      margin-top: 5vh;
     }
-
-    .type {
-      font-size: 1.64rem;
-      font-weight: 400;
-      color: white;
-    }
-
-    .type.answer {
-      font-size: 1.224rem;
-    }
-
-    .know_more {
-      font-size: 17px;
-      background-color: rgba(0, 0, 0, 0.1);
-      border: 1px solid white;
-      color: white;
-    }
+    // @media #{$large-and-up} {
+    //   margin-top: 5vh;
+    // }
+    // @media #{$extra-large-and-up} {
+    //   margin-top: 5rem;
+    // }
   }
 
-  div.card-holder {
-    padding-top: 50px;
 
-    div.card.hoverable {
-      background-color: rgba(0, 0, 0, 0.2);
-
-      div.card-content {
-        p.service {
-          color: white;
-          font-weight: 300;
-          font-size: 24px;
-        }
-
-        p.description {
-          color: white;
-          font-weight: 300;
-          font-size: 18px;
-        }
-
-        a.know_more {
-          color: yellow;
-          font-weight: 400;
-          border-bottom: 0.1px solid yellow;
-          font-size: 18px;
-        }
-      }
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    // @media #{$medium-and-up} {
+    //   font-size: 48px;
+    // }
+    @media #{$large-and-up} {
+      font-size: 56px;
     }
-  }
-}
-
-.tagline {
-  height: 25vh;
-  i {
-    cursor: pointer;
-  }
-}
-
-.product-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: 20px;
-
-  h3 {
-    display: inline-block;
-    border-bottom: 2px solid rgb(32, 14, 56);
+    @media #{$extra-large-and-up} {
+      font-size: 72px;
+    }
   }
 }

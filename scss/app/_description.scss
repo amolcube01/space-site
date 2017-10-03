@@ -1,0 +1,42 @@
+section#features {
+  .description {
+    margin: 0;
+    padding: 48px;
+    img {
+      width: 100%;
+    }
+    .feature {
+      padding: 0 48px;
+      box-shadow: none;
+      @media #{$medium-and-up} {
+        padding: 48px;
+        border-radius: 100px 0 100px 20px;
+        box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+      }
+      h4 {
+        color:#06235b;
+        font-family: 'Roboto', sans-serif;
+        font-weight:300;
+      }
+      p {
+        color:#4a4a4a;
+        font-size:18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight:300;
+        word-spacing:2px;
+        span {
+          color:#e51c23;
+        }
+      }
+    }
+    @media #{$medium-and-up} {
+      padding: 5% 0;
+      display: flex;
+      align-items: center;
+      //margin-bottom: 5%;
+    }
+    @media #{$large-and-up} {
+      padding: 5%;
+    }
+  }
+}
