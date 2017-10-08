@@ -22,6 +22,7 @@ nav {
 
 nav,
 #navbar {
+  transition: all 0.3s;
   ul {
     a {
       &:hover {
@@ -33,8 +34,11 @@ nav,
   }
 }
 
+#navbar.close {
+  top: -64px;
+}
+
 #navbar {
-  display: none;
   background-color: white;color: rgba(0,0,0,.87);
   a {
     color: rgba(0,0,0,.87);;

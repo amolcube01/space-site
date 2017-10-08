@@ -4,8 +4,12 @@ section.contact {
   margin-top: -20px;
   padding: 48px 24px;
 
-  .fa {
-    font-size: 24px;
+  p,
+  span {
+    color: #4a4a4a;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
 
   div {
@@ -20,7 +24,6 @@ section.contact {
   textarea {
     margin-top: 10px !important;
     border-radius: 10px;
-    border: none !important;
   }
 
   h4,

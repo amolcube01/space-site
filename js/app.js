@@ -1,19 +1,52 @@
 $(document).ready(function() {
-  $("#navbar").hide()
+  var navClosed = true
   $(".button-collapse").sideNav();
-  $("#contact-us-btn1").click(function() {
+  $("#contact-us-btn2, #contact-us-btn1").click(function() {
     $('html, body').animate({
       scrollTop: $("#contact-us").offset().top
-    }, 2000);
+    }, 1000);
   });
-  $("#contact-us-btn2").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#contact-us").offset().top
-    }, 2000);
+
+  $("#submitBtnContactUs").click(function() {
+    var name = $('#name');
+    var email = $('#email');
+    var msg = $('#message');
+
+    if (name.val().length == 0) {
+      name.addClass('invalid')
+    }
+
+    if (msg.val().length == 0) {
+      msg.addClass('invalid')
+    }
+
+    if (name.hasClass('invalid') || email.hasClass('invalid') || msg.hasClass('invalid')) {
+      Materialize.toast('Form not properly filled', 1000)
+      return
+    }
+    $.post("/contact", {
+        name: name.val(),
+        email: email.val(),
+        message: msg.val()
+      })
+      .done(function(data) {
+        console.log(data)
+        if (JSON.parse(data).ack) {
+          Materialize.toast('Form submitted successfully', 1000)
+        } else {
+          Materialize.toast('Form not submitted', 1000)
+        }
+        alert("Data Loaded: " + data);
+      });
   });
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 300) $("#navbar").show()
-    else $("#navbar").hide()
+    if (scroll >= 100 && navClosed) {
+      $("#navbar").removeClass('close')
+      navClosed = false
+    } else if (scroll < 100 && !navClosed) {
+      $("#navbar").addClass('close')
+      navClosed = true
+    }
   });
 });
