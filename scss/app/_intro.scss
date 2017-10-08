@@ -1,27 +1,18 @@
 section.intro {
   height: 100vh;
   //background-color: #0D47A1;
-  background: linear-gradient(#051329, #10356f, #3d81e7);
+  background: linear-gradient(#051329, #10356f);
   .content {
     margin-top: 10%;
     @media #{$medium-and-up} {
       margin-top: 5vh;
     }
-    // @media #{$large-and-up} {
-    //   margin-top: 5vh;
-    // }
-    // @media #{$extra-large-and-up} {
-    //   margin-top: 5rem;
-    // }
   }
 
 
   h1 {
     font-size: 36px;
     font-weight: 300;
-    // @media #{$medium-and-up} {
-    //   font-size: 48px;
-    // }
     @media #{$large-and-up} {
       font-size: 56px;
     }
