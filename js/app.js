@@ -30,13 +30,14 @@ $(document).ready(function() {
         message: msg.val()
       })
       .done(function(data) {
-        console.log(data)
-        if (JSON.parse(data).ack) {
+        name.val('')
+        email.val('')
+        msg.val('')
+        if (data.ack) {
           Materialize.toast('Form submitted successfully', 1000)
         } else {
           Materialize.toast('Form not submitted', 1000)
         }
-        alert("Data Loaded: " + data);
       });
   });
   $(window).scroll(function() {
