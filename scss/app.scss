@@ -6,7 +6,6 @@
 @import "app/contact";
 @import "app/socialmedia";
 
-
 nav {
   @extend .z-depth-0;
 
@@ -21,9 +20,9 @@ nav {
   }
 }
 
-nav,
-#navbar {
+nav {
   transition: all 0.3s;
+
   ul {
     a {
       &:hover {
@@ -35,17 +34,15 @@ nav,
   }
 }
 
-#navbar.close {
-  top: -64px;
-}
-
-#navbar {
-  background-color: white;color: rgba(0,0,0,.87);
-  a {
-    color: rgba(0,0,0,.87);;
-  }
+nav.scrolled {
+  background-color: white;
+  color: rgba(0,0,0,.87);
   position: fixed;
   top: 0;
+
+  a {
+    color: rgba(0,0,0,.87);
+  }
   z-index: 999;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3) !important;
 }
