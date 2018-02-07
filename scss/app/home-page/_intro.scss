@@ -78,6 +78,7 @@ section.intro {
   .content {
     text-align: center;
     margin-top: 18%;
+
     @media #{$medium-and-up} {
       margin-top: 1vh;
     }
@@ -86,6 +87,7 @@ section.intro {
   h1 {
     font-size: 28px;
     font-weight: 300;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     @media #{$large-and-up} {
       font-size: 32px;
     }
