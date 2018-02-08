@@ -4,6 +4,7 @@
 <head>
   <title>Space Up Technologies | Your Virtual Cloud Architect</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed|Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./css/app.css" media="screen,projection" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -26,103 +27,117 @@
   </script>
 </head>
 
-<body>
+<body style="background-color:#f5f5f5">
 
   <!-- ****************************** Intro ****************************** -->
 
-  <section class="intro">
-
-    <nav id="navbar">
+  <section class="pricing-intro">
+    <nav id="navbar" class="">
       <div class="nav-wrapper">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-        <a href="" class="brand-logo">Space Up</a>
+        <a href="./index.html" class="brand-logo">Space Up</a>
         <ul class="right hide-on-small-only">
+          <li><a href="">Pricing</a></li>
           <li><a class="waves-effect waves-light btn angled materialize-red lighten-2 white-text" id="contact-us-btn2">Contact Us</a></li>
         </ul>
       </div>
     </nav>
-
     <ul id="slide-out" class="side-nav">
       <br><br>
       <li class="center">
         <img src="./images/logo.jpg" alt="" style="width:70%">
       </li>
       <br>
-      <li class="active"><a href=""><i class="material-icons">home</i>Home</a></li>
+      <li><a href=""><i class="material-icons">home</i>Home</a></li>
+      <li class="active"><a href=""><i class="material-icons">attach_money</i>Pricing</a></li>
     </ul>
-
     <div class="row content valign-wrapper">
-      <div class="col s12 xl6 offset-xl3">
-        <h1 class="white-text" style="margin-bottom:12px;margin-top:8px">Powering the NeXT Gen</h1>
-        <h1 class="white-text" style="margin-top:0;margin-bottom:16px">of Internet Applications</h1>
-        <a href="./space-ide" class="btn angled waves-effect waves-light materialize-red lighten-2">Get Started</a>
-        <div class="background_image">
-          <img id="ide-image" src="./images/Dashboard/Screen Shot 2018-02-08 at 8.22.32 PM.png" width="100%" height="100%" alt="">
-          <!-- <p class="video_button">
-            <a href="#">
-              <i class="material-icons medium blue-text">play_circle_filled</i>
-            </a>
-          </p> -->
+      <div class="col s12">
+        <p class="white-text top_content_text" style="margin-bottom:0">Simple, transparent pricing.</p>
+        <p class="white-text top_content_text" style="margin-top:0">Always know what you'll pay.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ****************************** Pricing Features ****************************** -->
+
+  <section class="pricing">
+    <div class="container" id="feature_container">
+
+      <div class="row" style="margin-bottom:32px">
+        <p class="pricing_header_text">Select your plan</p>
+        <p class="pricing_middle_text">Choose our free plans to get the hang of things and then upgrade as needed</p>
+        <!-- Switch -->
+        <div class="switch" style="text-align:center">
+          <label class="switch_size">
+           <span class="a">Billed Monthly</span>
+           <input type="checkbox">
+           <span class="lever"></span>
+           <span class="b">Billed Annually - Save 20%</span>
+       </label>
         </div>
       </div>
-    </div>
 
+      <div class="row">
+        <div class="col s12 m10 offset-m1 l12 xl10 offset-xl1">
+          <div class="col s12 l4">
+            <div class="card" style="background-color:#fafafa">
+              <div class="card-content" style="text-align:center">
+                <p class="entity_header">Developer</p>
+                <p class="circular_background">
+                  <i class="fa fa-user entity_icon" aria-hidden="true"></i>
+                </p>
+                <p class="developer_price">Free</p>
+                <span class="price_text">Limit 200 mb space</span>
+                <div class="divider" id="pricing_divider"></div>
+                <p class="features">100 invoices</p>
+                <p class="features">Custom scripting & scheduling</p>
+                <p class="features">Payment & accounting software integration</p>
+                <a class="waves-effect waves-light btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l4">
+            <div class="card z-depth-4" style="background-color:#fafafa">
+              <div class="card-content" style="text-align:center">
+                <p class="entity_header">Startup</p>
+                <p class="circular_background">
+                  <i class="fa fa-rocket entity_icon" aria-hidden="true"></i>
+                </p>
+                <p class="developer_price">$49.99</p>
+                <span class="price_text">per month</span>
+                <div class="divider" id="pricing_divider"></div>
+                <p class="features">100 invoices</p>
+                <p class="features">Custom scripting & scheduling</p>
+                <p class="features">Payment & accounting software integration</p>
+                <a class="waves-effect waves-light btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l4">
+            <div class="card" style="background-color:#fafafa">
+              <div class="card-content" style="text-align:center">
+                <p class="entity_header">Enterprise</p>
+                <p class="circular_background">
+                  <i class="fa fa-diamond entity_icon" aria-hidden="true"></i>
+                </p>
+                <p class="developer_price">$99.99</p>
+                <span class="price_text">per month</span>
+                <div class="divider" id="pricing_divider"></div>
+                <p class="features">100 invoices</p>
+                <p class="features">Custom scripting & scheduling</p>
+                <p class="features">Payment & accounting software integration</p>
+                <a class="waves-effect waves-light btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
-
-  <!-- ****************************** Features ****************************** -->
-
-  <section id="features">
-    <div class="row">
-      <h3 class="hide-on-small-and-down" style="margin-top:40px;margin-bottom:0">Backend as a Service</h3>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature">
-        <h4>Own the Disruptive Power</h4>
-        <p>Create your application's entire backend via an intuitive user interface using a <span>few clicks</span> without ever caring about servers, databases, routing and all that jazz.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/ui.jpg" alt="">
-      </div>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-med-and-up">
-        <h4>Tailor made for you</h4>
-        <p>Our algorithm architects your application's backend system, specifically <span>customised</span> for your needs, abiding by industrial best pratices.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/tailormade.jpg" alt="">
-      </div>
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-small-only">
-        <h4>Tailor made for you</h4>
-        <p>Our algorithm architects your application's backend system, specifically <span>customised</span> for your needs, abiding by industrial best pratices.</p>
-      </div>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature">
-        <h4>Unmatched Growth</h4>
-        <p>Your <span>legacy system</span> will always be supported and can be extended on the fly by adding custom code. Focus on growth, not maintenance.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/planetscale.png" alt="">
-      </div>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-med-and-up">
-        <h4>Deliver like never before</h4>
-        <p>Ready to deploy your application to production? A <span>single click</span> and see your application go live within seconds! Want to revert to an earlier version of your application? No problem! We've got your back.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/deploy.jpg" alt="">
-      </div>
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-small-only">
-        <h4>Deliver like never before</h4>
-        <p>Ready to deploy your application to production? A <span>single click</span> and see your application go live within seconds! Want to revert to an earlier version of your application? No problem! We've got your back.</p>
-      </div>
-    </div>
-  </section>
-
+  <br><br><br><br>
   <!-- ****************************** Virtual Cloud Architect ****************************** -->
-
   <section class="virtual-cloud-architect">
     <div class="row">
       <div class="col s12 m7 white-text" style="background-color:#0D47A1;padding:5%">

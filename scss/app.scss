@@ -1,10 +1,13 @@
 // Import the materialise partial
 @import 'materialize'; // Import your custom partials here
-@import 'app/intro';
-@import 'app/description';
-@import 'app/virtual-cloud-architect';
-@import "app/contact";
-@import "app/socialmedia";
+@import 'app/home-page/intro';
+@import 'app/home-page/description';
+@import 'app/home-page/virtual-cloud-architect';
+@import "app/home-page/contact";
+@import "app/home-page/socialmedia";
+@import 'app/pricing-page/pricing-intro';
+@import 'app/pricing-page/pricing-features';
+
 
 nav {
   @extend .z-depth-0;

@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
   $(".button-collapse").sideNav();
+
   $("#contact-us-btn2, #contact-us-btn1").click(function() {
     $('html, body').animate({
       scrollTop: $("#contact-us").offset().top
@@ -39,9 +41,11 @@ $(document).ready(function() {
         }
       });
   });
+
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) $("#navbar").addClass('scrolled')
     else if (scroll < 100) $("#navbar").removeClass('scrolled')
   });
+
 });
