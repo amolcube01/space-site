@@ -1,4 +1,4 @@
-section.intro {
+section.intro-homepage {
   height: 100vh;
   background: radial-gradient(circle, #1488CC, #ff00cc);
   background-size: 1000% 1000%;
@@ -9,31 +9,24 @@ section.intro {
     5% {
       background-position: 10% 0;
     }
-
     20% {
       background-position: 30% 0;
     }
-
     30% {
       background-position: 90% 0;
     }
-
     45% {
       background-position: 70% 0;
     }
-
     55% {
       background-position: 10% 0;
     }
-
     70% {
       background-position: 30% 0;
     }
-
     80% {
       background-position: 90% 0;
     }
-
     95% {
       background-position: 70% 0;
     }
@@ -44,51 +37,55 @@ section.intro {
       5% {
         background-position: 0 20%;
       }
-
       20% {
         background-position: 0 30%;
       }
-
       30% {
         background-position: 0 80%;
       }
-
       45% {
         background-position: 0 70%;
       }
-
       55% {
         background-position: 0 20%;
       }
-
       70% {
         background-position: 0 30%;
       }
-
       80% {
         background-position: 0 80%;
       }
-
       95% {
         background-position: 0 70%;
       }
     }
   }
-
+  #navbar {
+    .nav-wrapper {
+      .brand-logo {
+        margin-left: 10%;
+      }
+      .navbar-link {
+        font-size: 1.16rem;
+        text-decoration: none;
+      }
+      .navbar-link:hover {
+        color: #f48fb1;
+      }
+    }
+  }
   .content {
     text-align: center;
     margin-top: 18%;
-
     @media #{$medium-and-up} {
-      margin-top: 1vh;    
+      margin-top: 1vh;
       height: 80%;
     }
   }
-
   h1 {
     font-size: 28px;
     font-weight: 300;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     @media #{$large-and-up} {
       font-size: 32px;
     }
@@ -96,27 +93,56 @@ section.intro {
       font-size: 40px;
     }
   }
-
   .background_image {
-    box-shadow: 0 64px 80px 8px rgba(0,0,0,0.14), 0 24px 112px 16px rgba(0,0,0,0.12), 0 40px 40px -24px rgba(0,0,0,0.3);
+    box-shadow: 0 64px 80px 8px rgba(0, 0, 0, 0.14), 0 24px 112px 16px rgba(0, 0, 0, 0.12), 0 40px 40px -24px rgba(0, 0, 0, 0.3);
     position: relative;
     margin-top: 32px;
     width: 100%;
-    @media #{$medium-and-up} {  
+    @media #{$medium-and-up} {
       margin-top: 24px;
     }
-    @media #{$large-and-up} {
-    }
-    @media #{$extra-large-and-up} {
-    }
-
-    .video_button {
+    @media #{$large-and-up} {}
+    @media #{$extra-large-and-up} {}
+    .video-button {
       text-align: center;
+      display: block;
       width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      a {
+        display: inline-block;
+        transform: scale(2.6, 2.6);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        i {
+          color: #2196F3;
+          line-height: 1.5;
+        }
+      }
+      a:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(3.2, 3.2);
+        i {
+          color: #03a9f4;
+        }
+      }
+      @media #{$medium-and-up} {
+
+      }
+      @media #{$large-and-up} {
+  
+      }
+    }
+    .homepage-video {
+      width: 100%;
+      display: none;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
     }
   }
 }
