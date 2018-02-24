@@ -8,6 +8,18 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  $("#api-gateway-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#api-gateway").offset().top
+    }, 1000);
+  });
+
+  $("#tutorial-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#tutorial").offset().top
+    }, 1000);
+  });
+
   $("#submitBtnContactUs").click(function() {
     var name = $('#name');
     var email = $('#email');
@@ -46,6 +58,20 @@ $(document).ready(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) $("#navbar").addClass('scrolled')
     else if (scroll < 100) $("#navbar").removeClass('scrolled')
+  });
+
+  $('.standard.tooltipped').tooltip({
+    delay: 50,
+    html: true,
+    position: 'top',
+    tooltip: 'I am standard'
+  });
+
+  $('.oracle.tooltipped').tooltip({
+    delay: 50,
+    html: true,
+    position: 'top',
+    tooltip: 'I am oracle'
   });
 
 });

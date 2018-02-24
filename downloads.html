@@ -31,17 +31,17 @@
 
   <!-- ****************************** Intro ****************************** -->
 
-  <section class="intro-homepage">
+  <section class="intro-downloads">
 
     <nav id="navbar">
       <div class="nav-wrapper">
         <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up">
           <i class="material-icons">menu</i>
         </a>
-        <a href="" class="brand-logo">Space Up</a>
+        <a class="brand-logo">Space Up</a>
         <ul class="right hide-on-small-only">
           <li>
-            <a href="" class="navbar-link">Downloads</a>
+            <a class="navbar-link">Downloads</a>
           </li>
           <li>
             <a class="waves-effect waves-light btn angled materialize-red lighten-2 white-text" id="contact-us-btn2">Contact Us</a>
@@ -57,30 +57,32 @@
         <img src="./images/logo.jpg" alt="" style="width:70%">
       </li>
       <br>
-      <li class="active">
+      <li>
         <a href="">
           <i class="material-icons">home</i>Home</a>
       </li>
+      <li class="active">
+        <a href="">
+          <i class="material-icons">cloud_download</i>Downloads</a>
+      </li>
     </ul>
 
-    <div class="row content valign-wrapper">
-      <div class="col s12 xl6 offset-xl3">
-        <h1 class="white-text" style="margin-bottom:12px;margin-top:8px">Powering the NeXT Gen</h1>
-        <h1 class="white-text" style="margin-top:0;margin-bottom:16px">of Internet Applications</h1>
-        <div>
-          <a href="./space-ide" class="btn angled waves-effect waves-light materialize-red lighten-2">Get Started</a>
-        </div>
-        <div class="col s12 m10 offset-m1 l6 offset-l3 xl12">
-          <div class="background_image">
-            <img id="ide-image" src="./images/Dashboard/Screen Shot 2018-02-08 at 8.22.32 PM.png" width="100%" height="100%" alt="">
-            <p class="video-button">
-              <a onclick="videoButton()">
-                <i class="material-icons video-url" video-url="https://www.youtube.com/embed/X-LAo7zxzyA">play_circle_filled</i>
-              </a>
-            </p>
-            <div class="homepage-video">
-              <div class="video-container" style="width:100%;height:100%">
-                <iframe class="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col s12 m10 offset-m1 xl11 offset-xl1">
+          <div class="content">
+            <div class="col s12 xl6">
+              <p class="title">Lorem ipsum dolor sit amet</p>
+              <p class="description-large-screen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium asperiores ea voluptatibus, vel
+                consequatur veniam, magni veritatis fugiat vero modi esse sit animi accusantium nulla aut ad! Quasi, dicta?</p>
+              <div class="buttons-wrapper">
+                <a id="api-gateway-btn" class="waves-effect waves-light btn">API Gateway</a>
+                <a id="tutorial-btn" class="waves-effect waves-light btn">Tutorial</a>
+              </div>
+            </div>
+            <div class="col s12 xl5">
+              <div class="image-wrapper">
+                <img class="image" src="./images/Background Image/security.svg" alt="">
               </div>
             </div>
           </div>
@@ -90,66 +92,92 @@
 
   </section>
 
-  <!-- ****************************** Features ****************************** -->
+  <!-- ****************************** api gateway ****************************** -->
 
-  <section id="features">
+  <div id="api-gateway">
     <div class="row">
-      <h3 class="hide-on-small-and-down" style="margin-top:40px;margin-bottom:0">Backend as a Service</h3>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature">
-        <h4>Own the Disruptive Power</h4>
-        <p>Create your application's entire backend via an intuitive user interface using a
-          <span>few clicks</span> without ever caring about servers, databases, routing and all that jazz.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/ui.jpg" alt="">
-      </div>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-med-and-up">
-        <h4>Tailor made for you</h4>
-        <p>Our algorithm architects your application's backend system, specifically
-          <span>customised</span> for your needs, abiding by industrial best pratices.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/tailormade.jpg" alt="">
-      </div>
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-small-only">
-        <h4>Tailor made for you</h4>
-        <p>Our algorithm architects your application's backend system, specifically
-          <span>customised</span> for your needs, abiding by industrial best pratices.</p>
-      </div>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature">
-        <h4>Unmatched Growth</h4>
-        <p>Your
-          <span>legacy system</span> will always be supported and can be extended on the fly by adding custom code. Focus on growth,
-          not maintenance.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/planetscale.png" alt="">
-      </div>
-    </div>
-    <div class="row description">
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-med-and-up">
-        <h4>Deliver like never before</h4>
-        <p>Ready to deploy your application to production? A
-          <span>single click</span> and see your application go live within seconds! Want to revert to an earlier version of your
-          application? No problem! We've got your back.</p>
-      </div>
-      <div class="col s12 m4 offset-m1 center">
-        <img src="./images/deploy.jpg" alt="">
-      </div>
-      <div class="col s12 m5 offset-m1 card-panel feature hide-on-small-only">
-        <h4>Deliver like never before</h4>
-        <p>Ready to deploy your application to production? A
-          <span>single click</span> and see your application go live within seconds! Want to revert to an earlier version of your
-          application? No problem! We've got your back.</p>
+      <div class="col s12 m10 offset-m1">
+        <p class="title">Download API Gateway</p>
+        <p class="description">Below are the available downloads for the latest version of
+          <span style="color:#42A5F5;font-weight:400">API Gateway (0.7.1)</span>. Please download the proper package for your operating system and architecture.</p>
+        <div class="row version-wrapper">
+          <div class="col s12 m10 offset-m1 l12">
+            <div class="col s12 l4">
+              <div class="version">
+                <img src="./images/Background Image/mac.svg" alt="">
+                <div class="text-wrapper">
+                  <p class="svg-name">Mac OS X</p>
+                  <span onclick="Materialize.toast('Under Construction', 1000)" class="version-type">Standard</span>
+                  <i class="material-icons standard tooltipped  tooltip-icon">help_outline</i>
+                  <div class="divider"></div>
+                  <span onclick="Materialize.toast('Under Construction', 1000)" class="version-type">Oracle</span>
+                  <i class="material-icons oracle tooltipped tooltip-icon">help_outline</i>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 l4">
+              <div class="version">
+                <img src="./images/Background Image/linux.svg" alt="">
+                <div class="text-wrapper">
+                  <p class="svg-name">Linux</p>
+                  <span class="version-type">Standard</span>
+                  <i class="material-icons standard tooltipped tooltip-icon">help_outline</i>
+                  <div class="divider"></div>
+                  <span class="version-type">Oracle</span>
+                  <i class="material-icons oracle tooltipped tooltip-icon">help_outline</i>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 l4">
+              <div class="version">
+                <img src="./images/Background Image/windows.svg" alt="">
+                <div class="text-wrapper">
+                  <p class="svg-name">Windows</p>
+                  <span onclick="Materialize.toast('Under Construction', 1000)" class="version-type">Standard</span>
+                  <i class="material-icons standard tooltipped tooltip-icon">help_outline</i>
+                  <div class="divider"></div>
+                  <span onclick="Materialize.toast('Under Construction', 1000)" class="version-type">Oracle</span>
+                  <i class="material-icons oracle tooltipped tooltip-icon">help_outline</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- ****************************** tutorial ****************************** -->
+
+  <div id="tutorial">
+    <div class="row" style="margin-bottom:0">
+      <div class="col s12 m10 offset-m1">
+        <p class="title">Tutorial</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, esse quae. Laboriosam eum molestiae ratione!</p>
+        <div class="row tutorial-wrapper">
+          <div class="col s12">
+            <div class="col s12 l6">
+              <p class="tutorial-title">#BeTheHero</p>
+              <p class="tutorial-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, officiis sequi. Consequatur facilis excepturi,
+                quam dolores tempore dolorum facere aperiam provident maiores, aspernatur inventore quia ab placeat suscipit
+                impedit. Aliquam.</p>
+              <p class="git-command">
+                <code>
+                  git clone https://github.com/Dogfalo/materialize.git
+                </code>
+              </p>
+            </div>
+            <div class="col s12 l6">
+              <div class="video-container">
+                <iframe class="video-iframe" src="https://www.youtube.com/embed/X-LAo7zxzyA" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- ****************************** Virtual Cloud Architect ****************************** -->
 
@@ -176,7 +204,8 @@
     <div class="row">
       <div class="col s12 m7 l5 offset-l1">
         <h4>Get in Touch</h4>
-        <p>Ready to start your next project with us? That's great! Send us an email and we will get back to you as soon as possible!</p>
+        <p>Ready to start your next project with us? That's great! Send us an email and we will get back to you as soon as possible!
+        </p>
         <br>
         <p>Reach out to us on</p>
         <div class="valign-wrapper">

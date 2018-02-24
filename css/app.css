@@ -4535,7 +4535,37 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 .switch label input[type=checkbox][disabled]:checked + .lever:after {
   background-color: #949494; }
 
-section.intro {
+.material-tooltip {
+  padding: 10px 8px;
+  font-size: 1rem;
+  z-index: 2000;
+  background-color: transparent;
+  border-radius: 2px;
+  color: #fff;
+  min-height: 36px;
+  line-height: 120%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  max-width: calc(100% - 4px);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  visibility: hidden; }
+
+.backdrop {
+  position: absolute;
+  opacity: 0;
+  height: 7px;
+  width: 14px;
+  border-radius: 0 0 50% 50%;
+  background-color: #323232;
+  z-index: -1;
+  transform-origin: 50% 0%;
+  visibility: hidden; }
+
+section.intro-homepage {
   height: 100vh;
   background: radial-gradient(circle, #1488CC, #ff00cc);
   background-size: 1000% 1000%;
@@ -4560,7 +4590,7 @@ section.intro {
   95% {
     background-position: 70% 0; } }
   @media only screen and (max-width: 600px) {
-    section.intro {
+    section.intro-homepage {
       background-position: 0 20%; }
     @keyframes BackgroundSwitch {
       5% {
@@ -4579,38 +4609,67 @@ section.intro {
         background-position: 0 80%; }
       95% {
         background-position: 0 70%; } } }
-  section.intro .content {
+  section.intro-homepage #navbar .nav-wrapper .brand-logo {
+    margin-left: 10%; }
+  section.intro-homepage #navbar .nav-wrapper .navbar-link {
+    font-size: 1.16rem;
+    text-decoration: none; }
+  section.intro-homepage #navbar .nav-wrapper .navbar-link:hover {
+    color: #f48fb1; }
+  section.intro-homepage .content {
     text-align: center;
     margin-top: 18%; }
     @media only screen and (min-width: 601px) {
-      section.intro .content {
+      section.intro-homepage .content {
         margin-top: 1vh;
         height: 80%; } }
-  section.intro h1 {
+  section.intro-homepage h1 {
     font-size: 28px;
     font-weight: 300;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2); }
     @media only screen and (min-width: 993px) {
-      section.intro h1 {
+      section.intro-homepage h1 {
         font-size: 32px; } }
     @media only screen and (min-width: 1400px) {
-      section.intro h1 {
+      section.intro-homepage h1 {
         font-size: 40px; } }
-  section.intro .background_image {
+  section.intro-homepage .background_image {
     box-shadow: 0 64px 80px 8px rgba(0, 0, 0, 0.14), 0 24px 112px 16px rgba(0, 0, 0, 0.12), 0 40px 40px -24px rgba(0, 0, 0, 0.3);
     position: relative;
     margin-top: 32px;
     width: 100%; }
     @media only screen and (min-width: 601px) {
-      section.intro .background_image {
+      section.intro-homepage .background_image {
         margin-top: 24px; } }
-    section.intro .background_image .video_button {
+    section.intro-homepage .background_image .video-button {
       text-align: center;
+      display: block;
       width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      section.intro-homepage .background_image .video-button a {
+        display: inline-block;
+        transform: scale(2.6, 2.6);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; }
+        section.intro-homepage .background_image .video-button a i {
+          color: #2196F3;
+          line-height: 1.5; }
+      section.intro-homepage .background_image .video-button a:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(3.2, 3.2); }
+        section.intro-homepage .background_image .video-button a:hover i {
+          color: #03a9f4; }
+    section.intro-homepage .background_image .homepage-video {
+      width: 100%;
+      display: none;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10; }
 
 section#features .description {
   margin: 0;
@@ -4806,6 +4865,302 @@ section.pricing-intro {
     .features {
       font-size: 1rem; } }
 
+section.intro-downloads {
+  height: 100vh;
+  background: url("../images/Background Image/imageedit_19_2944241434.jpg");
+  background-size: cover; }
+  section.intro-downloads .content-wrapper {
+    position: relative;
+    padding-left: 0;
+    top: 8%; }
+    section.intro-downloads .content-wrapper .title {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 24px;
+      margin-top: 0;
+      text-align: center; }
+    section.intro-downloads .content-wrapper .description-large-screen {
+      display: none; }
+    section.intro-downloads .content-wrapper .buttons-wrapper {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      text-align: center; }
+      section.intro-downloads .content-wrapper .buttons-wrapper a {
+        font-size: 0.9rem; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #api-gateway-btn {
+        margin-right: 8px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #tutorial-btn {
+        margin-left: 8px; }
+    section.intro-downloads .content-wrapper .image-wrapper {
+      text-align: center; }
+      section.intro-downloads .content-wrapper .image-wrapper .image {
+        height: 200px;
+        box-shadow: -8px 0px 5px -5px rgba(0, 0, 0, 0.2), 8px 0px 5px -5px rgba(0, 0, 0, 0.2); }
+
+@media only screen and (min-width: 601px) {
+  section.intro-downloads #navbar .brand-logo {
+    margin-left: 10%;
+    cursor: pointer; }
+  section.intro-downloads #navbar .navbar-link {
+    font-size: 1.1rem; }
+  section.intro-downloads .content-wrapper {
+    padding-left: 0;
+    top: 10%; }
+    section.intro-downloads .content-wrapper .title {
+      font-size: 3rem;
+      margin-bottom: 24px;
+      margin-top: 0; }
+    section.intro-downloads .content-wrapper .description-small-screen {
+      display: none; }
+    section.intro-downloads .content-wrapper .description-large-screen {
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: center;
+      display: block; }
+    section.intro-downloads .content-wrapper .buttons-wrapper {
+      margin-top: 48px;
+      margin-bottom: 60px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper a {
+        font-size: 1rem; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #api-gateway-btn {
+        margin-right: 20px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #tutorial-btn {
+        margin-left: 20px; }
+    section.intro-downloads .content-wrapper .image-wrapper .image {
+      height: 340px; } }
+@media only screen and (min-width: 993px) {
+  section.intro-downloads #navbar .navbar-link {
+    font-size: 1.1rem; }
+  section.intro-downloads .content-wrapper {
+    padding-left: 0;
+    top: 4%; }
+    section.intro-downloads .content-wrapper .title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      margin-top: 0; }
+    section.intro-downloads .content-wrapper .description-small-screen {
+      display: none; }
+    section.intro-downloads .content-wrapper .description-large-screen {
+      font-size: 1.1rem; }
+    section.intro-downloads .content-wrapper .buttons-wrapper {
+      margin-top: 32px;
+      margin-bottom: 36px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper a {
+        font-size: 0.8rem; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #api-gateway-btn {
+        margin-right: 20px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #tutorial-btn {
+        margin-left: 20px; }
+    section.intro-downloads .content-wrapper .image-wrapper .image {
+      height: 300px; } }
+@media only screen and (min-width: 1400px) {
+  section.intro-downloads #navbar .navbar-link {
+    font-size: 1.1rem; }
+  section.intro-downloads .content-wrapper {
+    padding-left: 0;
+    top: 16%; }
+    section.intro-downloads .content-wrapper .title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      margin-top: 0; }
+    section.intro-downloads .content-wrapper .description-small-screen {
+      display: none; }
+    section.intro-downloads .content-wrapper .description-large-screen {
+      font-size: 1.1rem; }
+    section.intro-downloads .content-wrapper .buttons-wrapper {
+      margin-top: 32px;
+      margin-bottom: 0px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper a {
+        font-size: 0.9rem; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #api-gateway-btn {
+        margin-right: 20px; }
+      section.intro-downloads .content-wrapper .buttons-wrapper #tutorial-btn {
+        margin-left: 20px; }
+    section.intro-downloads .content-wrapper .image-wrapper {
+      padding-top: 16px; }
+      section.intro-downloads .content-wrapper .image-wrapper .image {
+        height: 340px; } }
+#api-gateway .title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ee6e73;
+  margin-bottom: 12px; }
+#api-gateway .description {
+  text-align: center;
+  color: #555555;
+  font-size: 1rem;
+  font-weight: 300; }
+#api-gateway .version-wrapper {
+  margin-top: 32px;
+  margin-bottom: 0px;
+  padding-left: 5%; }
+  #api-gateway .version-wrapper .version {
+    display: flex;
+    margin-bottom: 32px; }
+    #api-gateway .version-wrapper .version img {
+      height: 80px; }
+    #api-gateway .version-wrapper .version .text-wrapper {
+      padding-left: 20px; }
+      #api-gateway .version-wrapper .version .text-wrapper .svg-name {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+        color: #555555;
+        margin-top: 15px; }
+      #api-gateway .version-wrapper .version .text-wrapper .version-type {
+        color: #ee6e73;
+        cursor: pointer; }
+      #api-gateway .version-wrapper .version .text-wrapper .version-type:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #ee6e73; }
+      #api-gateway .version-wrapper .version .text-wrapper .tooltip-icon {
+        transform: translate(2px, 4px);
+        font-size: 1.2rem;
+        margin-right: 4px;
+        cursor: default;
+        color: #757575; }
+      #api-gateway .version-wrapper .version .text-wrapper .divider {
+        border-left: 1px solid #555555;
+        height: 16px;
+        position: relative;
+        top: 4px;
+        margin-left: 4px;
+        margin-right: 4px;
+        display: inline-block; }
+
+@media only screen and (min-width: 601px) {
+  #api-gateway .title {
+    font-size: 2.2rem;
+    margin-bottom: 12px; }
+  #api-gateway .description {
+    font-size: 1.2rem; }
+  #api-gateway .version-wrapper {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-left: 10%; }
+    #api-gateway .version-wrapper .version {
+      margin-bottom: 44px; }
+      #api-gateway .version-wrapper .version img {
+        height: 80px; }
+      #api-gateway .version-wrapper .version .text-wrapper {
+        padding-left: 20px; }
+        #api-gateway .version-wrapper .version .text-wrapper .svg-name {
+          font-size: 1.5rem;
+          margin-bottom: 4px;
+          margin-top: 15px; }
+        #api-gateway .version-wrapper .version .text-wrapper .tooltip-icon {
+          transform: translate(2px, 4px);
+          font-size: 1.2rem;
+          margin-right: 4px; }
+        #api-gateway .version-wrapper .version .text-wrapper .divider {
+          border-left: 1px solid #555555;
+          height: 16px;
+          position: relative;
+          top: 4px;
+          margin-left: 4px;
+          margin-right: 4px;
+          display: inline-block; } }
+@media only screen and (min-width: 993px) {
+  #api-gateway .title {
+    font-size: 2rem;
+    margin-bottom: 10px; }
+  #api-gateway .description {
+    font-size: 1.1rem; }
+  #api-gateway .version-wrapper {
+    margin-top: 52px;
+    margin-bottom: 0px;
+    padding-left: 6%; }
+    #api-gateway .version-wrapper .version {
+      margin-bottom: 64px; }
+      #api-gateway .version-wrapper .version img {
+        height: 80px; }
+      #api-gateway .version-wrapper .version .text-wrapper {
+        padding-left: 20px; }
+        #api-gateway .version-wrapper .version .text-wrapper .svg-name {
+          font-size: 1.5rem;
+          margin-bottom: 4px;
+          margin-top: 15px; }
+        #api-gateway .version-wrapper .version .text-wrapper .tooltip-icon {
+          transform: translate(2px, 4px);
+          font-size: 1.2rem;
+          margin-right: 4px; }
+        #api-gateway .version-wrapper .version .text-wrapper .divider {
+          border-left: 1px solid #555555;
+          height: 16px;
+          position: relative;
+          top: 4px;
+          margin-left: 4px;
+          margin-right: 4px;
+          display: inline-block; } }
+#tutorial {
+  background: #fcfcfc; }
+  #tutorial .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ee6e73;
+    margin-bottom: 12px; }
+  #tutorial .description {
+    text-align: center;
+    color: #555555;
+    font-size: 1rem;
+    font-weight: 300; }
+  #tutorial .tutorial-wrapper {
+    margin-top: 32px;
+    margin-bottom: 64px; }
+    #tutorial .tutorial-wrapper .tutorial-title {
+      font-size: 1.8rem;
+      color: #ee6e73;
+      margin-top: 0;
+      margin-bottom: 12px; }
+    #tutorial .tutorial-wrapper .tutorial-description {
+      margin-bottom: 16px; }
+    #tutorial .tutorial-wrapper .git-command {
+      background: #eff0f1;
+      margin-bottom: 40px;
+      padding: 0;
+      font-size: 0.8rem; }
+
+@media only screen and (min-width: 601px) {
+  #tutorial .title {
+    font-size: 2.2rem;
+    margin-bottom: 12px; }
+  #tutorial .description {
+    font-size: 1.2rem; }
+  #tutorial .tutorial-wrapper {
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 64px; }
+    #tutorial .tutorial-wrapper .tutorial-title {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 16px; }
+    #tutorial .tutorial-wrapper .tutorial-description {
+      margin-bottom: 8px; }
+    #tutorial .tutorial-wrapper .git-command {
+      margin-top: 32px;
+      margin-bottom: 40px;
+      padding: 0;
+      font-size: 0.8rem; } }
+@media only screen and (min-width: 993px) {
+  #tutorial .title {
+    font-size: 2rem;
+    margin-bottom: 12px; }
+  #tutorial .description {
+    font-size: 1.1rem; }
+  #tutorial .tutorial-wrapper {
+    margin-top: 48px;
+    margin-bottom: 72px;
+    text-align: left; }
+    #tutorial .tutorial-wrapper .tutorial-title {
+      font-size: 1.6rem;
+      margin-top: 0;
+      margin-bottom: 16px; }
+    #tutorial .tutorial-wrapper .tutorial-description {
+      margin-bottom: 8px; }
+    #tutorial .tutorial-wrapper .git-command {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding: 4px 0px 4px 8px;
+      font-size: 0.8rem; } }
 nav .brand-logo {
   display: inline;
   position: static; }
@@ -4839,5 +5194,19 @@ section h3 {
 
 a.btn, a.btn-large {
   border-radius: 15px 0 15px 15px; }
+
+.material-tooltip {
+  max-width: 360px; }
+
+.material-tooltip:after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid blue;
+  z-index: 3000; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,96 @@
+#tutorial {
+  background: #fcfcfc;
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ee6e73;
+    margin-bottom: 12px;
+  }
+  .description {
+    text-align: center;
+    color: #555555;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .tutorial-wrapper {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    .tutorial-title {
+      font-size: 1.8rem;
+      color: #ee6e73;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    .tutorial-description {
+      margin-bottom: 16px;
+    }
+    .git-command {
+      background: #eff0f1;
+      margin-bottom: 40px;
+      padding: 0;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media #{$medium-and-up} {
+  #tutorial {
+    .title {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    .description {
+      font-size: 1.2rem;
+    }
+    .tutorial-wrapper {
+      margin-top: 32px;
+      text-align: center;
+      margin-bottom: 64px;
+      .tutorial-title {
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .tutorial-description {
+        margin-bottom: 8px;
+      }
+      .git-command {
+        margin-top: 32px;
+        margin-bottom: 40px;
+        padding: 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media #{$large-and-up} {
+  #tutorial {
+    .title {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .description {
+      font-size: 1.1rem;
+    }
+    .tutorial-wrapper {
+      margin-top: 48px;
+      margin-bottom: 72px;
+      text-align: left;
+      .tutorial-title {
+        font-size: 1.6rem;
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .tutorial-description {
+        margin-bottom: 8px;
+      }
+      .git-command {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 4px 0px 4px 8px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
