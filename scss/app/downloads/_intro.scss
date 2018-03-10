@@ -1,17 +1,53 @@
 section.intro-downloads {
-  height: 100vh;
+  height: 100vh; 
   background: url("../images/Background Image/imageedit_19_2944241434.jpg");
   background-size: cover;
+  // background: radial-gradient(circle, #1488CC, #ff00cc);
+  // background-size: 1000% 1000%;
+  // animation: BackgroundSwitch 20s linear infinite;
+  // background-position: 0 20%;
+  // animation-direction: normal;
+  // @keyframes BackgroundSwitch {
+  //   5% {
+  //     background-position: 0 20%;
+  //   }
+  //   20% {
+  //     background-position: 0 30%;
+  //   }
+  //   30% {
+  //     background-position: 0 80%;
+  //   }
+  //   45% {
+  //     background-position: 0 70%;
+  //   }
+  //   55% {
+  //     background-position: 0 20%;
+  //   }
+  //   70% {
+  //     background-position: 0 30%;
+  //   }
+  //   80% {
+  //     background-position: 0 80%;
+  //   }
+  //   95% {
+  //     background-position: 0 70%;
+  //   }
+  // }
+  .brand-logo {
+    margin-left: 10%;
+  }
   .content-wrapper {
     position: relative;
     padding-left: 0;
-    top: 8%;
+    top: 12%;
     .title {
-      font-size: 2.5rem;
+      font-size: 28px;
       color: #fff;
       margin-bottom: 24px;
       margin-top: 0;
+      font-weight: 300;
       text-align: center;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     }
     .description-large-screen {
       display: none;
@@ -42,6 +78,33 @@ section.intro-downloads {
 
 @media #{$medium-and-up} {
   section.intro-downloads {
+    // background-position: 10% 0;
+    // @keyframes BackgroundSwitch {
+    //   5% {
+    //     background-position: 10% 0;
+    //   }
+    //   20% {
+    //     background-position: 30% 0;
+    //   }
+    //   30% {
+    //     background-position: 90% 0;
+    //   }
+    //   45% {
+    //     background-position: 70% 0;
+    //   }
+    //   55% {
+    //     background-position: 10% 0;
+    //   }
+    //   70% {
+    //     background-position: 30% 0;
+    //   }
+    //   80% {
+    //     background-position: 90% 0;
+    //   }
+    //   95% {
+    //     background-position: 70% 0;
+    //   }
+    // }
     #navbar {
       .brand-logo {
         margin-left: 10%;
@@ -99,7 +162,7 @@ section.intro-downloads {
     }
     .content-wrapper {
       padding-left: 0;
-      top: 4%;
+      top: 0%;
       .title {
         font-size: 2.2rem;
         margin-bottom: 20px;
@@ -115,7 +178,7 @@ section.intro-downloads {
         margin-top: 32px;
         margin-bottom: 36px;
         a {
-          font-size: 0.8rem;
+          font-size: 1rem;
         }
         #api-gateway-btn {
           margin-right: 20px;
@@ -126,7 +189,7 @@ section.intro-downloads {
       }
       .image-wrapper {
         .image {
-          height: 300px;
+          height: 340px;
         }
       }
     }
@@ -142,7 +205,7 @@ section.intro-downloads {
     }
     .content-wrapper {
       padding-left: 0;
-      top: 16%;
+      top: 14%;
       .title {
         font-size: 3rem;
         margin-bottom: 20px;
@@ -158,7 +221,7 @@ section.intro-downloads {
         margin-top: 32px;
         margin-bottom: 0px;
         a {
-          font-size: 0.9rem;
+          font-size: 1rem;
         }
         #api-gateway-btn {
           margin-right: 20px;
@@ -170,7 +233,7 @@ section.intro-downloads {
       .image-wrapper {
         padding-top: 16px;
         .image {
-          height: 340px;
+          height: 380px;
         }
       }
     }
