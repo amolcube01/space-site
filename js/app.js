@@ -64,14 +64,14 @@ $(document).ready(function() {
     delay: 50,
     html: true,
     position: 'top',
-    tooltip: 'I am standard'
+    tooltip: 'The standard binary file to be executed!'
   });
 
   $('.oracle.tooltipped').tooltip({
     delay: 50,
     html: true,
     position: 'top',
-    tooltip: 'I am oracle'
+    tooltip: 'The standard binary file along with the oracle drivers!'
   });
 
 });

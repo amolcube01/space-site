@@ -4567,52 +4567,12 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 section.intro-homepage {
   height: 100vh;
-  background: radial-gradient(circle, #1488CC, #ff00cc);
-  background-size: 1000% 1000%;
-  animation: BackgroundSwitch 20s linear infinite;
-  background-position: 10% 0;
-  animation-direction: normal; }
-@keyframes BackgroundSwitch {
-  5% {
-    background-position: 10% 0; }
-  20% {
-    background-position: 30% 0; }
-  30% {
-    background-position: 90% 0; }
-  45% {
-    background-position: 70% 0; }
-  55% {
-    background-position: 10% 0; }
-  70% {
-    background-position: 30% 0; }
-  80% {
-    background-position: 90% 0; }
-  95% {
-    background-position: 70% 0; } }
-  @media only screen and (max-width: 600px) {
-    section.intro-homepage {
-      background-position: 0 20%; }
-    @keyframes BackgroundSwitch {
-      5% {
-        background-position: 0 20%; }
-      20% {
-        background-position: 0 30%; }
-      30% {
-        background-position: 0 80%; }
-      45% {
-        background-position: 0 70%; }
-      55% {
-        background-position: 0 20%; }
-      70% {
-        background-position: 0 30%; }
-      80% {
-        background-position: 0 80%; }
-      95% {
-        background-position: 0 70%; } } }
+  background: url("../images/Background Image/imageedit_19_2944241434.jpg");
+  background-size: cover; }
   section.intro-homepage #navbar .nav-wrapper .brand-logo {
     margin-left: 10%; }
   section.intro-homepage #navbar .nav-wrapper .navbar-link {
-    font-size: 1.16rem;
+    font-size: 1.1rem;
     text-decoration: none; }
   section.intro-homepage #navbar .nav-wrapper .navbar-link:hover {
     color: #f48fb1; }
@@ -4869,16 +4829,20 @@ section.intro-downloads {
   height: 100vh;
   background: url("../images/Background Image/imageedit_19_2944241434.jpg");
   background-size: cover; }
+  section.intro-downloads .brand-logo {
+    margin-left: 10%; }
   section.intro-downloads .content-wrapper {
     position: relative;
     padding-left: 0;
-    top: 8%; }
+    top: 12%; }
     section.intro-downloads .content-wrapper .title {
-      font-size: 2.5rem;
+      font-size: 28px;
       color: #fff;
       margin-bottom: 24px;
       margin-top: 0;
-      text-align: center; }
+      font-weight: 300;
+      text-align: center;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2); }
     section.intro-downloads .content-wrapper .description-large-screen {
       display: none; }
     section.intro-downloads .content-wrapper .buttons-wrapper {
@@ -4933,7 +4897,7 @@ section.intro-downloads {
     font-size: 1.1rem; }
   section.intro-downloads .content-wrapper {
     padding-left: 0;
-    top: 4%; }
+    top: 0%; }
     section.intro-downloads .content-wrapper .title {
       font-size: 2.2rem;
       margin-bottom: 20px;
@@ -4946,19 +4910,19 @@ section.intro-downloads {
       margin-top: 32px;
       margin-bottom: 36px; }
       section.intro-downloads .content-wrapper .buttons-wrapper a {
-        font-size: 0.8rem; }
+        font-size: 1rem; }
       section.intro-downloads .content-wrapper .buttons-wrapper #api-gateway-btn {
         margin-right: 20px; }
       section.intro-downloads .content-wrapper .buttons-wrapper #tutorial-btn {
         margin-left: 20px; }
     section.intro-downloads .content-wrapper .image-wrapper .image {
-      height: 300px; } }
+      height: 340px; } }
 @media only screen and (min-width: 1400px) {
   section.intro-downloads #navbar .navbar-link {
     font-size: 1.1rem; }
   section.intro-downloads .content-wrapper {
     padding-left: 0;
-    top: 16%; }
+    top: 14%; }
     section.intro-downloads .content-wrapper .title {
       font-size: 3rem;
       margin-bottom: 20px;
@@ -4971,7 +4935,7 @@ section.intro-downloads {
       margin-top: 32px;
       margin-bottom: 0px; }
       section.intro-downloads .content-wrapper .buttons-wrapper a {
-        font-size: 0.9rem; }
+        font-size: 1rem; }
       section.intro-downloads .content-wrapper .buttons-wrapper #api-gateway-btn {
         margin-right: 20px; }
       section.intro-downloads .content-wrapper .buttons-wrapper #tutorial-btn {
@@ -4979,16 +4943,16 @@ section.intro-downloads {
     section.intro-downloads .content-wrapper .image-wrapper {
       padding-top: 16px; }
       section.intro-downloads .content-wrapper .image-wrapper .image {
-        height: 340px; } }
+        height: 380px; } }
 #api-gateway .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #ee6e73;
   margin-bottom: 12px; }
 #api-gateway .description {
   text-align: center;
   color: #555555;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300; }
 #api-gateway .version-wrapper {
   margin-top: 32px;
@@ -5095,29 +5059,30 @@ section.intro-downloads {
   background: #fcfcfc; }
   #tutorial .title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #ee6e73;
     margin-bottom: 12px; }
   #tutorial .description {
     text-align: center;
     color: #555555;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300; }
   #tutorial .tutorial-wrapper {
     margin-top: 32px;
     margin-bottom: 64px; }
     #tutorial .tutorial-wrapper .tutorial-title {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       color: #ee6e73;
       margin-top: 0;
       margin-bottom: 12px; }
     #tutorial .tutorial-wrapper .tutorial-description {
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      font-size: 1.1rem; }
     #tutorial .tutorial-wrapper .git-command {
       background: #eff0f1;
       margin-bottom: 40px;
       padding: 0;
-      font-size: 0.8rem; }
+      font-size: 0.9rem; }
 
 @media only screen and (min-width: 601px) {
   #tutorial .title {
