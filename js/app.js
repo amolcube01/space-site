@@ -64,14 +64,14 @@ $(document).ready(function () {
     delay: 50,
     html: true,
     position: 'top',
-    tooltip: 'The standard binary file to be executed (SQLite)'
+    tooltip: 'The standard binary file to be executed'
   });
 
   $('.standard.windows.tooltipped').tooltip({
     delay: 50,
     html: true,
     position: 'top',
-    tooltip: 'The standard binary file to be executed (No SQLite)'
+    tooltip: 'The standard binary file to be executed (No SQLite3)'
   });
 
   $('.oracle.tooltipped').tooltip({
