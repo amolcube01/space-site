@@ -7,9 +7,9 @@
 @import "app/home-page/socialmedia";
 @import 'app/pricing-page/pricing-intro';
 @import 'app/pricing-page/pricing-features';
-@import 'app/downloads/intro';
-@import 'app/downloads/api-gateway';
-@import 'app/downloads/tutorial';
+@import 'app/get-started/intro';
+@import 'app/get-started/api-gateway';
+@import 'app/get-started/tutorial';
 
 nav {
   @extend .z-depth-0;

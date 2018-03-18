@@ -4574,8 +4574,10 @@ section.intro-homepage {
   section.intro-homepage #navbar .nav-wrapper .navbar-link {
     font-size: 1.1rem;
     text-decoration: none; }
+  section.intro-homepage #navbar .nav-wrapper .navbar-link.active {
+    color: #ee6e73; }
   section.intro-homepage #navbar .nav-wrapper .navbar-link:hover {
-    color: #f48fb1; }
+    color: #ee6e73; }
   section.intro-homepage .content {
     text-align: center;
     margin-top: 18%; }
@@ -4593,6 +4595,19 @@ section.intro-homepage {
     @media only screen and (min-width: 1400px) {
       section.intro-homepage h1 {
         font-size: 40px; } }
+  section.intro-homepage .buttons-wrapper {
+    margin-top: 20px; }
+    section.intro-homepage .buttons-wrapper a {
+      font-size: 1rem; }
+    section.intro-homepage .buttons-wrapper #get-started-btn {
+      margin-right: 12px; }
+    section.intro-homepage .buttons-wrapper #space-ide-btn {
+      display: inline-block; }
+    @media only screen and (min-width: 601px) {
+      section.intro-homepage .buttons-wrapper #get-started-btn {
+        margin-right: 0px; }
+      section.intro-homepage .buttons-wrapper #space-ide-btn {
+        display: none; } }
   section.intro-homepage .background_image {
     box-shadow: 0 64px 80px 8px rgba(0, 0, 0, 0.14), 0 24px 112px 16px rgba(0, 0, 0, 0.12), 0 40px 40px -24px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -4867,6 +4882,10 @@ section.intro-downloads {
     cursor: pointer; }
   section.intro-downloads #navbar .navbar-link {
     font-size: 1.1rem; }
+  section.intro-downloads #navbar .navbar-link.active {
+    color: #ee6e73; }
+  section.intro-downloads #navbar .navbar-link:hover {
+    color: #ee6e73; }
   section.intro-downloads .content-wrapper {
     padding-left: 0;
     top: 10%; }

@@ -1,26 +1,26 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
   $(".button-collapse").sideNav();
 
-  $("#contact-us-btn2, #contact-us-btn1").click(function() {
+  $("#contact-us-btn2, #contact-us-btn1").click(function () {
     $('html, body').animate({
       scrollTop: $("#contact-us").offset().top
     }, 1000);
   });
 
-  $("#api-gateway-btn").click(function() {
+  $("#api-gateway-btn").click(function () {
     $('html, body').animate({
       scrollTop: $("#api-gateway").offset().top
     }, 1000);
   });
 
-  $("#tutorial-btn").click(function() {
+  $("#tutorial-btn").click(function () {
     $('html, body').animate({
       scrollTop: $("#tutorial").offset().top
     }, 1000);
   });
 
-  $("#submitBtnContactUs").click(function() {
+  $("#submitBtnContactUs").click(function () {
     var name = $('#name');
     var email = $('#email');
     var msg = $('#message');
@@ -42,7 +42,7 @@ $(document).ready(function() {
         email: email.val(),
         message: msg.val()
       })
-      .done(function(data) {
+      .done(function (data) {
         name.val('')
         email.val('')
         msg.val('')
@@ -54,7 +54,7 @@ $(document).ready(function() {
       });
   });
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) $("#navbar").addClass('scrolled')
     else if (scroll < 100) $("#navbar").removeClass('scrolled')
@@ -64,14 +64,21 @@ $(document).ready(function() {
     delay: 50,
     html: true,
     position: 'top',
-    tooltip: 'The standard binary file to be executed!'
+    tooltip: 'The standard binary file to be executed (SQLite)'
+  });
+
+  $('.standard.windows.tooltipped').tooltip({
+    delay: 50,
+    html: true,
+    position: 'top',
+    tooltip: 'The standard binary file to be executed (No SQLite)'
   });
 
   $('.oracle.tooltipped').tooltip({
     delay: 50,
     html: true,
     position: 'top',
-    tooltip: 'The standard binary file along with the oracle drivers!'
+    tooltip: 'The standard binary file along with the oracle drivers'
   });
 
 });

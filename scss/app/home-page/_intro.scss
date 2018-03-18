@@ -1,8 +1,7 @@
 section.intro-homepage {
   height: 100vh;
   background: url("../images/Background Image/imageedit_19_2944241434.jpg");
-  background-size: cover;
-  // background: radial-gradient(circle, #1488CC, #ff00cc);
+  background-size: cover; // background: radial-gradient(circle, #1488CC, #ff00cc);
   // background-size: 1000% 1000%;
   // animation: BackgroundSwitch 20s linear infinite;
   // background-position: 10% 0;
@@ -71,8 +70,11 @@ section.intro-homepage {
         font-size: 1.1rem;
         text-decoration: none;
       }
+      .navbar-link.active {
+        color: #ee6e73;
+      }
       .navbar-link:hover {
-        color: #f48fb1;
+        color: #ee6e73;
       }
     }
   }
@@ -93,6 +95,26 @@ section.intro-homepage {
     }
     @media #{$extra-large-and-up} {
       font-size: 40px;
+    }
+  }
+  .buttons-wrapper {
+    margin-top: 20px;
+    a {
+      font-size: 1rem;
+    }
+    #get-started-btn {
+      margin-right: 12px;
+    }
+    #space-ide-btn {
+      display: inline-block;
+    }
+    @media #{$medium-and-up} {
+      #get-started-btn {
+        margin-right: 0px;
+      }
+      #space-ide-btn {
+        display: none;
+      }
     }
   }
   .background_image {
@@ -130,12 +152,8 @@ section.intro-homepage {
           color: #03a9f4;
         }
       }
-      @media #{$medium-and-up} {
-
-      }
-      @media #{$large-and-up} {
-  
-      }
+      @media #{$medium-and-up} {}
+      @media #{$large-and-up} {}
     }
     .homepage-video {
       width: 100%;
