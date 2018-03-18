@@ -1,0 +1,241 @@
+section.intro-downloads {
+  height: 100vh; 
+  background: url("../images/Background Image/imageedit_19_2944241434.jpg");
+  background-size: cover;
+  // background: radial-gradient(circle, #1488CC, #ff00cc);
+  // background-size: 1000% 1000%;
+  // animation: BackgroundSwitch 20s linear infinite;
+  // background-position: 0 20%;
+  // animation-direction: normal;
+  // @keyframes BackgroundSwitch {
+  //   5% {
+  //     background-position: 0 20%;
+  //   }
+  //   20% {
+  //     background-position: 0 30%;
+  //   }
+  //   30% {
+  //     background-position: 0 80%;
+  //   }
+  //   45% {
+  //     background-position: 0 70%;
+  //   }
+  //   55% {
+  //     background-position: 0 20%;
+  //   }
+  //   70% {
+  //     background-position: 0 30%;
+  //   }
+  //   80% {
+  //     background-position: 0 80%;
+  //   }
+  //   95% {
+  //     background-position: 0 70%;
+  //   }
+  // }
+  .brand-logo {
+    margin-left: 10%;
+  }
+  .content-wrapper {
+    position: relative;
+    padding-left: 0;
+    top: 12%;
+    .title {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 24px;
+      margin-top: 0;
+      font-weight: 300;
+      text-align: center;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    .description-large-screen {
+      display: none;
+    }
+    .buttons-wrapper {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      text-align: center;
+      a {
+        font-size: 0.9rem;
+      }
+      #api-gateway-btn {
+        margin-right: 8px;
+      }
+      #tutorial-btn {
+        margin-left: 8px;
+      }
+    }
+    .image-wrapper {
+      text-align: center;
+      .image {
+        height: 200px;
+        box-shadow: -8px 0px 5px -5px rgba(0, 0, 0, .2), 8px 0px 5px -5px rgba(0, 0, 0, .2);
+      }
+    }
+  }
+}
+
+@media #{$medium-and-up} {
+  section.intro-downloads {
+    // background-position: 10% 0;
+    // @keyframes BackgroundSwitch {
+    //   5% {
+    //     background-position: 10% 0;
+    //   }
+    //   20% {
+    //     background-position: 30% 0;
+    //   }
+    //   30% {
+    //     background-position: 90% 0;
+    //   }
+    //   45% {
+    //     background-position: 70% 0;
+    //   }
+    //   55% {
+    //     background-position: 10% 0;
+    //   }
+    //   70% {
+    //     background-position: 30% 0;
+    //   }
+    //   80% {
+    //     background-position: 90% 0;
+    //   }
+    //   95% {
+    //     background-position: 70% 0;
+    //   }
+    // }
+    #navbar {
+      .brand-logo {
+        margin-left: 10%;
+        cursor: pointer;
+      }
+      .navbar-link {
+        font-size: 1.1rem;
+      }
+    }
+    .content-wrapper {
+      padding-left: 0;
+      top: 10%;
+      .title {
+        font-size: 3rem;
+        margin-bottom: 24px;
+        margin-top: 0;
+      }
+      .description-small-screen {
+        display: none;
+      }
+      .description-large-screen {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        display: block;
+      }
+      .buttons-wrapper {
+        margin-top: 48px;
+        margin-bottom: 60px;
+        a {
+          font-size: 1rem;
+        }
+        #api-gateway-btn {
+          margin-right: 20px;
+        }
+        #tutorial-btn {
+          margin-left: 20px;
+        }
+      }
+      .image-wrapper {
+        .image {
+          height: 340px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$large-and-up} {
+  section.intro-downloads {
+    #navbar {
+      .navbar-link {
+        font-size: 1.1rem;
+      }
+    }
+    .content-wrapper {
+      padding-left: 0;
+      top: 0%;
+      .title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .description-small-screen {
+        display: none;
+      }
+      .description-large-screen {
+        font-size: 1.1rem;
+      }
+      .buttons-wrapper {
+        margin-top: 32px;
+        margin-bottom: 36px;
+        a {
+          font-size: 1rem;
+        }
+        #api-gateway-btn {
+          margin-right: 20px;
+        }
+        #tutorial-btn {
+          margin-left: 20px;
+        }
+      }
+      .image-wrapper {
+        .image {
+          height: 340px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$extra-large-and-up} {
+  section.intro-downloads {
+    #navbar {
+      .navbar-link {
+        font-size: 1.1rem;
+      }
+    }
+    .content-wrapper {
+      padding-left: 0;
+      top: 14%;
+      .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .description-small-screen {
+        display: none;
+      }
+      .description-large-screen {
+        font-size: 1.1rem;
+      }
+      .buttons-wrapper {
+        margin-top: 32px;
+        margin-bottom: 0px;
+        a {
+          font-size: 1rem;
+        }
+        #api-gateway-btn {
+          margin-right: 20px;
+        }
+        #tutorial-btn {
+          margin-left: 20px;
+        }
+      }
+      .image-wrapper {
+        padding-top: 16px;
+        .image {
+          height: 380px;
+        }
+      }
+    }
+  }
+}

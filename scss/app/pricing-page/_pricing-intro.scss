@@ -1,0 +1,26 @@
+section.pricing-intro {
+  height: 56vh;
+  background: linear-gradient(#051329, #10356f);
+
+  .content {
+    margin-top: 6%;
+    text-align: center;
+    @media #{$large-and-up} {
+      margin-top: 3%;
+    }
+    @media #{$extra-large-and-up} {
+      margin-top: 3%;
+    }
+  }
+
+  p.top_content_text {
+    font-size: 30px;
+    font-weight: 300;
+    @media #{$large-and-up} {
+      font-size: 42px;
+    }
+    @media #{$extra-large-and-up} {
+      font-size: 46px;
+    }
+  }
+}

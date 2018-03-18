@@ -1,8 +1,22 @@
 $(document).ready(function() {
+
   $(".button-collapse").sideNav();
+
   $("#contact-us-btn2, #contact-us-btn1").click(function() {
     $('html, body').animate({
       scrollTop: $("#contact-us").offset().top
+    }, 1000);
+  });
+
+  $("#api-gateway-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#api-gateway").offset().top
+    }, 1000);
+  });
+
+  $("#tutorial-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#tutorial").offset().top
     }, 1000);
   });
 
@@ -39,9 +53,25 @@ $(document).ready(function() {
         }
       });
   });
+
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) $("#navbar").addClass('scrolled')
     else if (scroll < 100) $("#navbar").removeClass('scrolled')
   });
+
+  $('.standard.tooltipped').tooltip({
+    delay: 50,
+    html: true,
+    position: 'top',
+    tooltip: 'The standard binary file to be executed!'
+  });
+
+  $('.oracle.tooltipped').tooltip({
+    delay: 50,
+    html: true,
+    position: 'top',
+    tooltip: 'The standard binary file along with the oracle drivers!'
+  });
+
 });

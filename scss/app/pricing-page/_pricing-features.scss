@@ -1,0 +1,111 @@
+/* ----------------- Pricing Header ------------------ */
+#feature_container {
+  @media #{$large-and-up} {
+    width: 90% !important;
+  }
+}
+
+.pricing_header_text {
+  text-align: center;
+  color: #444444;
+  font-weight: 300;
+  margin-bottom: 16px;
+  font-size: 2.0rem;
+  @media #{$medium-and-up} {
+    font-size: 2.2rem;
+  }
+  @media #{$large-and-up} {
+    font-size: 2.5rem;
+  }
+}
+
+.pricing_middle_text {
+  text-align: center;
+  color: #444444;
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 1.1rem;
+  @media #{$medium-and-up} {
+    font-size: 1.4rem;
+  }
+}
+
+.switch_size {
+  font-size: 1.0rem;
+  @media #{$medium-and-up} {
+    font-size: 1.1rem;
+  }
+  @media #{$large-and-up} {
+    font-size: 1.15rem;
+  }
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: red;
+}
+/* ----------------- Cards ------------------ */
+.entity_header {
+  font-weight: 300;
+  color: #444444 !important;
+  font-size: 2.1rem;
+  @media #{$large-and-up} {
+    // styles for large screens and up
+  }
+  @media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+  }
+}
+
+.circular_background {
+  border-radius: 50%;
+  background: #e0e0e0;
+  padding: 28px;
+  width: 32px;
+  height: 32px;
+  margin: 20px auto 0 !important;
+  position: relative;
+  @media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+  }
+}
+
+.entity_icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #1976d2;
+  font-size: 2rem !important;
+  @media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+  }
+}
+
+.developer_price {
+  font-size: 2.35rem;
+  margin: 16px 0 !important;
+  color: #039be5 !important;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 0 !important;
+  @media #{$large-and-up} {
+    font-size: 2.25rem;
+  }
+  @media #{$extra-large-and-up} {
+    font-size: 2.2rem;
+  }
+}
+
+.price_text {
+  color: #bdbdbd;
+}
+
+#pricing_divider {
+  margin-top: 16px;
+}
+
+.features {
+  margin: 20px !important;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  @media #{$large-and-up} {
+    font-size: 1rem;
+  }
+}
