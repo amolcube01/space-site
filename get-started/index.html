@@ -4,7 +4,7 @@
 <head>
   <title>Space Up Technologies | Your Virtual Cloud Architect</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed|Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="./css/app.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="/css/app.css" media="screen,projection" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -38,13 +38,19 @@
         <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up">
           <i class="material-icons">menu</i>
         </a>
-        <a href="./index.html" class="brand-logo">Space Up</a>
-        <ul class="right hide-on-small-only">
+        <a href="/" class="brand-logo">Space Up</a>
+        <ul class="right hide-on-small-only" style="padding-right:20px">
           <li>
-            <a href="" class="navbar-link">Downloads</a>
+            <a href="/" class="navbar-link">Home</a>
           </li>
           <li>
-            <a class="waves-effect waves-light btn angled materialize-red lighten-2 white-text" id="contact-us-btn2">Contact Us</a>
+            <a class="navbar-link active" href="/get-started">Get Started</a>
+          </li>
+          <li>
+            <a class="navbar-link" id="contact-us-btn2">Contact Us</a>
+          </li>
+          <li>
+            <a href="/space-ide" class="waves-effect waves-light btn angled materialize-red lighten-2 white-text">Space IDE</a>
           </li>
         </ul>
       </div>
@@ -58,12 +64,16 @@
       </li>
       <br>
       <li>
-        <a href="./index.html">
+        <a href="/">
           <i class="material-icons">home</i>Home</a>
       </li>
       <li class="active">
-        <a href="">
-          <i class="material-icons">cloud_download</i>Downloads</a>
+        <a href="/get-started">
+          <i class="material-icons">send</i>Get Started</a>
+      </li>
+      <li>
+        <a href="/space-ide">
+          <i class="material-icons">dashboard</i>Space IDE</a>
       </li>
     </ul>
 
@@ -72,12 +82,13 @@
         <div class="col s12 m10 offset-m1 xl11 offset-xl1">
           <div class="content">
             <div class="col s12 xl6">
-              <p class="title">Lorem ipsum dolor sit amet</p>
-              <p class="description-large-screen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium asperiores ea voluptatibus, vel
-                consequatur veniam, magni veritatis fugiat vero modi esse sit animi accusantium nulla aut ad! Quasi, dicta?</p>
+              <br>
+              <br>
+              <p class="title">Future of Programming</p>
+              <p class="description-large-screen">Space IDE is designed to optimise developer productivity by providing a zero code development environment. Use the built in technology integrations to accelerate your digital endeavours.</p>
               <div class="buttons-wrapper">
-                <a id="api-gateway-btn" class="btn angled waves-effect waves-light materialize-red lighten-2">API Gateway</a>
-                <a id="tutorial-btn" class="btn angled waves-effect waves-light materialize-red lighten-2">Tutorial</a>
+                <a id="api-gateway-btn" class="btn angled waves-effect waves-light materialize-red lighten-2">Space Exec</a>
+                <a id="tutorial-btn" class="btn angled waves-effect waves-light materialize-red lighten-2">Demo App</a>
               </div>
             </div>
             <div class="col s12 xl5">
@@ -97,9 +108,9 @@
   <div id="api-gateway">
     <div class="row">
       <div class="col s12 m10 offset-m1">
-        <p class="title">Download API Gateway</p>
+        <p class="title">Download Space Exec</p>
         <p class="description">Below are the available downloads for the latest version of
-          <span style="color:#42A5F5;font-weight:400">API Gateway (0.7.1)</span>. Please download the proper package for your operating system and architecture.</p>
+          <span style="color:#42A5F5;font-weight:400">Space Exec (0.6.5)</span>. Please download the proper package for your operating system and architecture.</p>
         <div class="row version-wrapper">
           <div class="col s12 m10 offset-m1 l12">
             <div class="col s12 l4">
@@ -107,10 +118,10 @@
                 <img src="./images/Background Image/mac.svg" alt="">
                 <div class="text-wrapper">
                   <p class="svg-name">Mac OS X</p>
-                  <span onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Standard</span>
-                  <i class="material-icons standard tooltipped  tooltip-icon">help_outline</i>
+                  <a href="#" class="version-type">Standard</a>
+                  <i class="material-icons standard tooltipped tooltip-icon">help_outline</i>
                   <div class="divider"></div>
-                  <span onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Oracle</span>
+                  <a onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Oracle</a>
                   <i class="material-icons oracle tooltipped tooltip-icon">help_outline</i>
                 </div>
               </div>
@@ -120,10 +131,10 @@
                 <img src="./images/Background Image/linux.svg" alt="">
                 <div class="text-wrapper">
                   <p class="svg-name">Linux</p>
-                  <span class="version-type">Standard</span>
+                  <a href="#" class="version-type">Standard</a>
                   <i class="material-icons standard tooltipped tooltip-icon">help_outline</i>
                   <div class="divider"></div>
-                  <span class="version-type">Oracle</span>
+                  <a onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Oracle</a>
                   <i class="material-icons oracle tooltipped tooltip-icon">help_outline</i>
                 </div>
               </div>
@@ -133,10 +144,10 @@
                 <img src="./images/Background Image/windows.svg" alt="">
                 <div class="text-wrapper">
                   <p class="svg-name">Windows</p>
-                  <span onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Standard</span>
-                  <i class="material-icons standard tooltipped tooltip-icon">help_outline</i>
+                  <a href="#" class="version-type">Standard</a>
+                  <i class="material-icons standard windows tooltipped tooltip-icon">help_outline</i>
                   <div class="divider"></div>
-                  <span onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Oracle</span>
+                  <a onclick="Materialize.toast('Coming Soon!', 1000)" class="version-type">Oracle</a>
                   <i class="material-icons oracle tooltipped tooltip-icon">help_outline</i>
                 </div>
               </div>
@@ -153,17 +164,15 @@
     <div class="row" style="margin-bottom:24px">
       <div class="col s12 m10 offset-m1">
         <p class="title">Tutorial</p>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, esse quae. Laboriosam eum molestiae ratione!</p>
+        <p class="description">A simple web app to get you started with Space IDE.</p>
         <div class="row tutorial-wrapper">
           <div class="col s12">
             <div class="col s12 l6">
               <p class="tutorial-title">#BeTheHero</p>
-              <p class="tutorial-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, officiis sequi. Consequatur facilis excepturi,
-                quam dolores tempore dolorum facere aperiam provident maiores, aspernatur inventore quia ab placeat suscipit
-                impedit. Aliquam.</p>
+              <p class="tutorial-description">Be The Heroes is your chance to realise your greatest adventure, of being a Hero! Make your own Hero with awesome super powers and compete with your arch nemesis.</p>
               <p class="git-command">
                 <code>
-                  git clone https://github.com/Dogfalo/materialize.git
+                  git clone https://github.com/spaceuptech/be-the-hero.git
                 </code>
               </p>
             </div>

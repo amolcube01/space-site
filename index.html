@@ -4,7 +4,7 @@
 <head>
   <title>Space Up Technologies | Your Virtual Cloud Architect</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed|Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="./css/app.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="/css/app.css" media="screen,projection" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -38,13 +38,19 @@
         <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up">
           <i class="material-icons">menu</i>
         </a>
-        <a href="" class="brand-logo">Space Up</a>
-        <ul class="right hide-on-small-only">
+        <a href="/" class="brand-logo">Space Up</a>
+        <ul class="right hide-on-small-only" style="padding-right:20px">
           <li>
-            <a href="./downloads.html" class="navbar-link">Downloads</a>
+            <a href="/" class="navbar-link active">Home</a>
           </li>
           <li>
-            <a class="waves-effect waves-light btn angled materialize-red lighten-2 white-text" id="contact-us-btn2">Contact Us</a>
+            <a class="navbar-link" href="/get-started">Get Started</a>
+          </li>
+          <li>
+            <a class="navbar-link" id="contact-us-btn2">Contact Us</a>
+          </li>
+          <li>
+            <a href="/space-ide" class="waves-effect waves-light btn angled materialize-red lighten-2 white-text">Space IDE</a>
           </li>
         </ul>
       </div>
@@ -58,12 +64,16 @@
       </li>
       <br>
       <li class="active">
-        <a href="">
+        <a href="/">
           <i class="material-icons">home</i>Home</a>
       </li>
       <li>
-        <a href="./downloads.html">
-          <i class="material-icons">cloud_download</i>Downloads</a>
+        <a href="/get-started">
+          <i class="material-icons">send</i>Get Started</a>
+      </li>
+      <li>
+        <a href="/space-ide">
+          <i class="material-icons">dashboard</i>Space IDE</a>
       </li>
     </ul>
 
@@ -71,8 +81,9 @@
       <div class="col s12 xl6 offset-xl3">
         <h1 class="white-text" style="margin-bottom:12px;margin-top:8px">Powering the NeXT Gen</h1>
         <h1 class="white-text" style="margin-top:0;margin-bottom:16px">of Internet Applications</h1>
-        <div>
-          <a href="./space-ide" class="btn angled waves-effect waves-light materialize-red lighten-2">Get Started</a>
+        <div class="buttons-wrapper">
+          <a id="get-started-btn" href="./get_started.html" class="btn angled waves-effect waves-light materialize-red lighten-2">Get Started</a>
+          <a id="space-ide-btn" href="./space-ide" class="btn angled waves-effect waves-light materialize-red lighten-2">Space IDE</a>
         </div>
         <div class="col s12 m10 offset-m1 l6 offset-l3 xl12">
           <div class="background_image">

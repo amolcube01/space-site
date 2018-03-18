@@ -1,8 +1,7 @@
 section.intro-downloads {
-  height: 100vh; 
+  height: 100vh;
   background: url("../images/Background Image/imageedit_19_2944241434.jpg");
-  background-size: cover;
-  // background: radial-gradient(circle, #1488CC, #ff00cc);
+  background-size: cover; // background: radial-gradient(circle, #1488CC, #ff00cc);
   // background-size: 1000% 1000%;
   // animation: BackgroundSwitch 20s linear infinite;
   // background-position: 0 20%;
@@ -112,6 +111,12 @@ section.intro-downloads {
       }
       .navbar-link {
         font-size: 1.1rem;
+      }
+      .navbar-link.active {
+        color: #ee6e73;
+      }
+      .navbar-link:hover {
+        color: #ee6e73;
       }
     }
     .content-wrapper {
