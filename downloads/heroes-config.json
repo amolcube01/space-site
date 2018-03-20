@@ -1,0 +1,22 @@
+{
+  "login": {
+    "account": "demo@spaceuptech.com",
+    "key": "b0b79bb0-2aaa-11e8-b8a9-75e543e2e7cf",
+    "branch": "prod",
+    "appId": "6e892dda-2ab5-11e8-8744-42010a8e0004"
+  },
+  "port": "8090",
+  "dbs": {
+     "mysql": "root:my-secret-pw@/hero?charset=utf8"
+  },
+  "static": {
+    "/static": "./be-the-hero/build/static"
+  },
+  "files": {
+    "/": "./be-the-hero/build/index.html"
+  },
+  "cookie": {
+      "authKey": "very-secret-code",
+      "encryptKey": "770A8A65DA156D24EE2A093277530142"
+  }
+}
