@@ -3,14 +3,20 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>http://www.spaceuptech.com</loc>
+    <loc>https://www.spaceuptech.com</loc>
     <image:image>
-       <image:loc>http://www.spaceuptech.com/images/lambda.png</image:loc>
+       <image:loc>https://www.spaceuptech.com/images/lambda.png</image:loc>
        <image:caption>Space Up Technology's function as a service (lambda function)</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://www.spaceuptech.com/images/emit.png</image:loc>
+       <image:loc>https://www.spaceuptech.com/images/emit.png</image:loc>
        <image:caption>Space Up Technology's integrated push notification service</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.spaceuptech.com/get-started</loc>
+  </url>
+  <url>
+    <loc>https://www.spaceuptech.com/space-ide</loc>
   </url>
 </urlset>
