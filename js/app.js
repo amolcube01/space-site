@@ -74,6 +74,13 @@ $(document).ready(function () {
     tooltip: 'The standard binary file to be executed (No SQLite3)'
   });
 
+  $('.standard.macos.tooltipped').tooltip({
+    delay: 50,
+    html: true,
+    position: 'top',
+    tooltip: 'The standard binary file to be executed (No SQLite3)'
+  });
+
   $('.oracle.tooltipped').tooltip({
     delay: 50,
     html: true,
